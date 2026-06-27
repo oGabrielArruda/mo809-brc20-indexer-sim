@@ -1,0 +1,172 @@
+{
+  "scenario": "sat_tracking",
+  "final_block_height": 6,
+  "tracked_sats": [
+    {
+      "sat_number": 0,
+      "mined_in_block": 0,
+      "rarity": "mythic",
+      "final_location": null,
+      "history": [
+        {
+          "block": 0,
+          "outpoint": "f12671cea7de63fa4ecbae2223867850a7045e2f33765f20b8bd8283c2b051ac:0"
+        }
+      ]
+    },
+    {
+      "sat_number": 5000000000,
+      "mined_in_block": 1,
+      "rarity": "uncommon",
+      "final_location": null,
+      "history": [
+        {
+          "block": 1,
+          "outpoint": "f12671cea7de63fa4ecbae2223867850a7045e2f33765f20b8bd8283c2b051ac:0"
+        }
+      ]
+    },
+    {
+      "sat_number": 10000000000,
+      "mined_in_block": 2,
+      "rarity": "uncommon",
+      "final_location": "7de0b165e58adef540ecacdeee0b8c36bb45824bd2c385afa88222a2db9e658d:0",
+      "history": [
+        {
+          "block": 2,
+          "outpoint": "f12671cea7de63fa4ecbae2223867850a7045e2f33765f20b8bd8283c2b051ac:0"
+        },
+        {
+          "block": 3,
+          "outpoint": "9e0cf610456762289046a00dbfa610274f4a99a47f242aeb2b74b0dc05fcc819:0"
+        },
+        {
+          "block": 4,
+          "outpoint": "7116b783b4395770a222f826cc8105ef00801ccf345bee23c3af8ea84ab5a34d:0"
+        },
+        {
+          "block": 5,
+          "outpoint": "7de0b165e58adef540ecacdeee0b8c36bb45824bd2c385afa88222a2db9e658d:0"
+        }
+      ]
+    }
+  ],
+  "ordinal_metrics": [
+    {
+      "height": 0,
+      "total_sats_mined": 5000000000,
+      "tracked_utxos": 1,
+      "rarity_counts": {
+        "common": 4999999999,
+        "uncommon": 0,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    },
+    {
+      "height": 1,
+      "total_sats_mined": 10000000000,
+      "tracked_utxos": 1,
+      "rarity_counts": {
+        "common": 9999999998,
+        "uncommon": 1,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    },
+    {
+      "height": 2,
+      "total_sats_mined": 15000000000,
+      "tracked_utxos": 1,
+      "rarity_counts": {
+        "common": 14999999997,
+        "uncommon": 2,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    },
+    {
+      "height": 3,
+      "total_sats_mined": 20000000000,
+      "tracked_utxos": 3,
+      "rarity_counts": {
+        "common": 19999999996,
+        "uncommon": 3,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    },
+    {
+      "height": 4,
+      "total_sats_mined": 25000000000,
+      "tracked_utxos": 4,
+      "rarity_counts": {
+        "common": 24999999995,
+        "uncommon": 4,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    },
+    {
+      "height": 5,
+      "total_sats_mined": 30000000000,
+      "tracked_utxos": 5,
+      "rarity_counts": {
+        "common": 29999999994,
+        "uncommon": 5,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0,
+        "mythic": 1
+      }
+    }
+  ],
+  "blockchain_metrics": [
+    {
+      "height": 0,
+      "num_transactions": 1,
+      "utxo_set_size": 1,
+      "total_utxo_value": 5000000000
+    },
+    {
+      "height": 1,
+      "num_transactions": 1,
+      "utxo_set_size": 1,
+      "total_utxo_value": 5000000000
+    },
+    {
+      "height": 2,
+      "num_transactions": 1,
+      "utxo_set_size": 1,
+      "total_utxo_value": 5000000000
+    },
+    {
+      "height": 3,
+      "num_transactions": 2,
+      "utxo_set_size": 3,
+      "total_utxo_value": 10000000000
+    },
+    {
+      "height": 4,
+      "num_transactions": 2,
+      "utxo_set_size": 4,
+      "total_utxo_value": 9999999000
+    },
+    {
+      "height": 5,
+      "num_transactions": 2,
+      "utxo_set_size": 5,
+      "total_utxo_value": 9999998000
+    }
+  ]
+}

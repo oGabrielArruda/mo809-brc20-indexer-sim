@@ -1,0 +1,102 @@
+2026-06-27 13:08:18,759 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:08:18,759 [INFO] src.simulation.scenarios: Running scenario: basic
+2026-06-27 13:08:18,760 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:08:18,760 [INFO] src.simulation.scenarios: === Scenario: Basic BRC-20 Flow ===
+2026-06-27 13:08:18,760 [INFO] src.simulation.scenarios: Deploying 'ordi' token...
+2026-06-27 13:08:18,760 [INFO] src.simulation.scenarios: Minting tokens...
+2026-06-27 13:08:18,762 [INFO] src.simulation.scenarios: Transferring tokens...
+2026-06-27 13:08:18,764 [INFO] src.simulation.scenarios: Scenario basic completed successfully
+2026-06-27 13:08:18,764 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:08:18,764 [INFO] src.simulation.scenarios: Running scenario: stress
+2026-06-27 13:08:18,764 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:08:18,764 [INFO] src.simulation.scenarios: === Scenario: Stress Test ===
+2026-06-27 13:08:18,819 [INFO] src.simulation.scenarios: Scenario stress completed successfully
+2026-06-27 13:08:18,819 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:08:18,819 [INFO] src.simulation.scenarios: Running scenario: inconsistency
+2026-06-27 13:08:18,820 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:08:18,820 [INFO] src.simulation.scenarios: === Scenario: Indexer Inconsistency ===
+2026-06-27 13:08:18,823 [INFO] src.simulation.scenarios: Scenario inconsistency completed successfully
+2026-06-27 13:08:18,823 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:08:18,823 [INFO] src.simulation.scenarios: Running scenario: sat_tracking
+2026-06-27 13:08:18,824 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:08:18,824 [INFO] src.simulation.scenarios: === Scenario: Sat Tracking ===
+2026-06-27 13:08:18,825 [INFO] src.simulation.scenarios: Scenario sat_tracking completed successfully
+2026-06-27 13:08:18,825 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:08:18,825 [INFO] src.simulation.scenarios: Running scenario: edge_cases
+2026-06-27 13:08:18,825 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:08:18,826 [INFO] src.simulation.scenarios: === Scenario: Edge Cases ===
+2026-06-27 13:08:18,832 [INFO] src.simulation.scenarios: Scenario edge_cases completed successfully
+2026-06-27 13:08:18,851 [INFO] src.simulation.scenarios: All results saved to /mnt/7840FD4F40FD151A/linux/projects/unicamp/mo809/data/results/all_results.json
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: Running scenario: basic
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: === Scenario: Basic BRC-20 Flow ===
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: Deploying 'ordi' token...
+2026-06-27 13:09:12,341 [INFO] src.simulation.scenarios: Minting tokens...
+2026-06-27 13:09:12,343 [INFO] src.simulation.scenarios: Transferring tokens...
+2026-06-27 13:09:12,344 [INFO] src.simulation.scenarios: Scenario basic completed successfully
+2026-06-27 13:09:12,344 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:09:12,344 [INFO] src.simulation.scenarios: Running scenario: stress
+2026-06-27 13:09:12,344 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:09:12,344 [INFO] src.simulation.scenarios: === Scenario: Stress Test ===
+2026-06-27 13:09:12,387 [INFO] src.simulation.scenarios: Scenario stress completed successfully
+2026-06-27 13:09:12,387 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:09:12,387 [INFO] src.simulation.scenarios: Running scenario: inconsistency
+2026-06-27 13:09:12,387 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:09:12,387 [INFO] src.simulation.scenarios: === Scenario: Indexer Inconsistency ===
+2026-06-27 13:09:12,391 [INFO] src.simulation.scenarios: Scenario inconsistency completed successfully
+2026-06-27 13:09:12,391 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:09:12,391 [INFO] src.simulation.scenarios: Running scenario: sat_tracking
+2026-06-27 13:09:12,391 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:09:12,391 [INFO] src.simulation.scenarios: === Scenario: Sat Tracking ===
+2026-06-27 13:09:12,392 [INFO] src.simulation.scenarios: Scenario sat_tracking completed successfully
+2026-06-27 13:09:12,392 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:09:12,392 [INFO] src.simulation.scenarios: Running scenario: edge_cases
+2026-06-27 13:09:12,392 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:09:12,392 [INFO] src.simulation.scenarios: === Scenario: Edge Cases ===
+2026-06-27 13:09:12,395 [INFO] src.simulation.scenarios: Scenario edge_cases completed successfully
+2026-06-27 13:09:12,406 [INFO] src.simulation.scenarios: All results saved to /mnt/7840FD4F40FD151A/linux/projects/unicamp/mo809/data/results/all_results.json
+2026-06-27 13:10:25,651 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:10:25,652 [INFO] src.simulation.scenarios: Running scenario: basic
+2026-06-27 13:10:25,652 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:10:25,652 [INFO] src.simulation.scenarios: === Scenario: Basic BRC-20 Flow ===
+2026-06-27 13:10:25,652 [INFO] src.simulation.scenarios: Deploying 'ordi' token...
+2026-06-27 13:10:25,653 [INFO] src.simulation.scenarios: Minting tokens...
+2026-06-27 13:10:25,655 [INFO] src.simulation.scenarios: Transferring tokens...
+2026-06-27 13:10:25,658 [INFO] src.simulation.scenarios: Scenario basic completed successfully
+2026-06-27 13:10:25,658 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:10:25,658 [INFO] src.simulation.scenarios: Running scenario: stress
+2026-06-27 13:10:25,658 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:10:25,658 [INFO] src.simulation.scenarios: === Scenario: Stress Test ===
+2026-06-27 13:10:25,744 [INFO] src.simulation.scenarios: Scenario stress completed successfully
+2026-06-27 13:10:25,744 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:10:25,744 [INFO] src.simulation.scenarios: Running scenario: inconsistency
+2026-06-27 13:10:25,745 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:10:25,745 [INFO] src.simulation.scenarios: === Scenario: Indexer Inconsistency ===
+2026-06-27 13:10:25,750 [INFO] src.simulation.scenarios: Scenario inconsistency completed successfully
+2026-06-27 13:10:25,750 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:10:25,750 [INFO] src.simulation.scenarios: Running scenario: sat_tracking
+2026-06-27 13:10:25,750 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:10:25,750 [INFO] src.simulation.scenarios: === Scenario: Sat Tracking ===
+2026-06-27 13:10:25,751 [INFO] src.simulation.scenarios: Scenario sat_tracking completed successfully
+2026-06-27 13:10:25,751 [INFO] src.simulation.scenarios: 
+============================================================
+2026-06-27 13:10:25,751 [INFO] src.simulation.scenarios: Running scenario: edge_cases
+2026-06-27 13:10:25,751 [INFO] src.simulation.scenarios: ============================================================
+2026-06-27 13:10:25,751 [INFO] src.simulation.scenarios: === Scenario: Edge Cases ===
+2026-06-27 13:10:25,758 [INFO] src.simulation.scenarios: Scenario edge_cases completed successfully
+2026-06-27 13:10:25,784 [INFO] src.simulation.scenarios: All results saved to /mnt/7840FD4F40FD151A/linux/projects/unicamp/mo809/data/results/all_results.json

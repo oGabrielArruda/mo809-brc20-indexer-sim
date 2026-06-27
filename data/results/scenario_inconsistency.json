@@ -1,0 +1,1556 @@
+{
+  "scenario": "inconsistency",
+  "final_block_height": 42,
+  "divergences": {
+    "total_divergences": 5,
+    "by_category": {
+      "token_existence": 1,
+      "supply_mismatch": 1,
+      "balance_mismatch": 3
+    },
+    "first_divergence_block": 41,
+    "divergences": [
+      {
+        "block": 41,
+        "category": "token_existence",
+        "detail": "Token 'ORDI'",
+        "a": "missing",
+        "b": "exists"
+      },
+      {
+        "block": 41,
+        "category": "supply_mismatch",
+        "detail": "Token 'ordi' total_minted",
+        "a": "7500",
+        "b": "2500"
+      },
+      {
+        "block": 41,
+        "category": "balance_mismatch",
+        "detail": "'ORDI' balance of bob",
+        "a": "overall=5200",
+        "b": "overall=5000"
+      },
+      {
+        "block": 41,
+        "category": "balance_mismatch",
+        "detail": "'ordi' balance of bob",
+        "a": "overall=5200",
+        "b": "overall=200"
+      },
+      {
+        "block": 41,
+        "category": "balance_mismatch",
+        "detail": "'ORDI' balance of alice",
+        "a": "overall=2300",
+        "b": "overall=0"
+      }
+    ]
+  },
+  "strict_snapshot": {
+    "tokens": {
+      "ordi": {
+        "max_supply": 21000000,
+        "total_minted": 7500,
+        "mint_limit": 1000
+      }
+    },
+    "balances": {
+      "alice": {
+        "ordi": {
+          "overall": 2300,
+          "transferable": 0,
+          "available": 2300
+        }
+      },
+      "bob": {
+        "ordi": {
+          "overall": 5200,
+          "transferable": 0,
+          "available": 5200
+        }
+      }
+    }
+  },
+  "lenient_snapshot": {
+    "tokens": {
+      "ORDI": {
+        "max_supply": 21000000,
+        "total_minted": 5000,
+        "mint_limit": 1000
+      },
+      "ordi": {
+        "max_supply": 10000000,
+        "total_minted": 2500,
+        "mint_limit": 500
+      }
+    },
+    "balances": {
+      "alice": {
+        "ordi": {
+          "overall": 2300,
+          "transferable": 0,
+          "available": 2300
+        }
+      },
+      "bob": {
+        "ORDI": {
+          "overall": 5000,
+          "transferable": 0,
+          "available": 5000
+        },
+        "ordi": {
+          "overall": 200,
+          "transferable": 0,
+          "available": 200
+        }
+      }
+    }
+  },
+  "events_strict": [
+    {
+      "block": 16,
+      "type": "deploy",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 18,
+      "type": "deploy",
+      "tick": "ordi",
+      "valid": false,
+      "error": "Token 'ordi' already deployed"
+    },
+    {
+      "block": 20,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 22,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 24,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 26,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 28,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 30,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 32,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 34,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 36,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 38,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 40,
+      "type": "transfer_inscribe",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 41,
+      "type": "transfer_send",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    }
+  ],
+  "events_lenient": [
+    {
+      "block": 16,
+      "type": "deploy",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 18,
+      "type": "deploy",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 20,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 22,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 24,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 26,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 28,
+      "type": "mint",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 30,
+      "type": "mint",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 32,
+      "type": "mint",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 34,
+      "type": "mint",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 36,
+      "type": "mint",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 38,
+      "type": "mint",
+      "tick": "ORDI",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 40,
+      "type": "transfer_inscribe",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    },
+    {
+      "block": 41,
+      "type": "transfer_send",
+      "tick": "ordi",
+      "valid": true,
+      "error": ""
+    }
+  ],
+  "metrics": {
+    "blockchain": [
+      {
+        "height": 0,
+        "num_transactions": 1,
+        "utxo_set_size": 1,
+        "total_utxo_value": 5000000000
+      },
+      {
+        "height": 1,
+        "num_transactions": 1,
+        "utxo_set_size": 1,
+        "total_utxo_value": 5000000000
+      },
+      {
+        "height": 2,
+        "num_transactions": 1,
+        "utxo_set_size": 1,
+        "total_utxo_value": 5000000000
+      },
+      {
+        "height": 3,
+        "num_transactions": 1,
+        "utxo_set_size": 1,
+        "total_utxo_value": 5000000000
+      },
+      {
+        "height": 4,
+        "num_transactions": 1,
+        "utxo_set_size": 1,
+        "total_utxo_value": 5000000000
+      },
+      {
+        "height": 5,
+        "num_transactions": 2,
+        "utxo_set_size": 3,
+        "total_utxo_value": 10000000000
+      },
+      {
+        "height": 6,
+        "num_transactions": 2,
+        "utxo_set_size": 4,
+        "total_utxo_value": 9999999000
+      },
+      {
+        "height": 7,
+        "num_transactions": 2,
+        "utxo_set_size": 5,
+        "total_utxo_value": 9999998000
+      },
+      {
+        "height": 8,
+        "num_transactions": 2,
+        "utxo_set_size": 6,
+        "total_utxo_value": 9999997000
+      },
+      {
+        "height": 9,
+        "num_transactions": 2,
+        "utxo_set_size": 6,
+        "total_utxo_value": 9999996000
+      },
+      {
+        "height": 10,
+        "num_transactions": 2,
+        "utxo_set_size": 8,
+        "total_utxo_value": 14999996000
+      },
+      {
+        "height": 11,
+        "num_transactions": 2,
+        "utxo_set_size": 9,
+        "total_utxo_value": 14999995000
+      },
+      {
+        "height": 12,
+        "num_transactions": 2,
+        "utxo_set_size": 10,
+        "total_utxo_value": 14999994000
+      },
+      {
+        "height": 13,
+        "num_transactions": 2,
+        "utxo_set_size": 11,
+        "total_utxo_value": 14999993000
+      },
+      {
+        "height": 14,
+        "num_transactions": 2,
+        "utxo_set_size": 11,
+        "total_utxo_value": 14999992000
+      },
+      {
+        "height": 15,
+        "num_transactions": 2,
+        "utxo_set_size": 13,
+        "total_utxo_value": 19999992000
+      },
+      {
+        "height": 16,
+        "num_transactions": 2,
+        "utxo_set_size": 13,
+        "total_utxo_value": 19999991000
+      },
+      {
+        "height": 17,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999990000
+      },
+      {
+        "height": 18,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999989000
+      },
+      {
+        "height": 19,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999988000
+      },
+      {
+        "height": 20,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999987000
+      },
+      {
+        "height": 21,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999986000
+      },
+      {
+        "height": 22,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999985000
+      },
+      {
+        "height": 23,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999984000
+      },
+      {
+        "height": 24,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999983000
+      },
+      {
+        "height": 25,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999982000
+      },
+      {
+        "height": 26,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999981000
+      },
+      {
+        "height": 27,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999980000
+      },
+      {
+        "height": 28,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999979000
+      },
+      {
+        "height": 29,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999978000
+      },
+      {
+        "height": 30,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999977000
+      },
+      {
+        "height": 31,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999976000
+      },
+      {
+        "height": 32,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999975000
+      },
+      {
+        "height": 33,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999974000
+      },
+      {
+        "height": 34,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999973000
+      },
+      {
+        "height": 35,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999972000
+      },
+      {
+        "height": 36,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999971000
+      },
+      {
+        "height": 37,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999970000
+      },
+      {
+        "height": 38,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999969000
+      },
+      {
+        "height": 39,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999968000
+      },
+      {
+        "height": 40,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999967000
+      },
+      {
+        "height": 41,
+        "num_transactions": 2,
+        "utxo_set_size": 14,
+        "total_utxo_value": 19999966000
+      }
+    ],
+    "ordinals": [
+      {
+        "height": 0,
+        "total_sats_mined": 5000000000,
+        "tracked_utxos": 1,
+        "rarity_counts": {
+          "common": 4999999999,
+          "uncommon": 0,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 1,
+        "total_sats_mined": 10000000000,
+        "tracked_utxos": 1,
+        "rarity_counts": {
+          "common": 9999999998,
+          "uncommon": 1,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 2,
+        "total_sats_mined": 15000000000,
+        "tracked_utxos": 1,
+        "rarity_counts": {
+          "common": 14999999997,
+          "uncommon": 2,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 3,
+        "total_sats_mined": 20000000000,
+        "tracked_utxos": 1,
+        "rarity_counts": {
+          "common": 19999999996,
+          "uncommon": 3,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 4,
+        "total_sats_mined": 25000000000,
+        "tracked_utxos": 1,
+        "rarity_counts": {
+          "common": 24999999995,
+          "uncommon": 4,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 5,
+        "total_sats_mined": 30000000000,
+        "tracked_utxos": 3,
+        "rarity_counts": {
+          "common": 29999999994,
+          "uncommon": 5,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 6,
+        "total_sats_mined": 35000000000,
+        "tracked_utxos": 4,
+        "rarity_counts": {
+          "common": 34999999993,
+          "uncommon": 6,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 7,
+        "total_sats_mined": 40000000000,
+        "tracked_utxos": 5,
+        "rarity_counts": {
+          "common": 39999999992,
+          "uncommon": 7,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 8,
+        "total_sats_mined": 45000000000,
+        "tracked_utxos": 6,
+        "rarity_counts": {
+          "common": 44999999991,
+          "uncommon": 8,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 9,
+        "total_sats_mined": 50000000000,
+        "tracked_utxos": 7,
+        "rarity_counts": {
+          "common": 49999999990,
+          "uncommon": 9,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 10,
+        "total_sats_mined": 55000000000,
+        "tracked_utxos": 8,
+        "rarity_counts": {
+          "common": 54999999989,
+          "uncommon": 10,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 11,
+        "total_sats_mined": 60000000000,
+        "tracked_utxos": 9,
+        "rarity_counts": {
+          "common": 59999999988,
+          "uncommon": 11,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 12,
+        "total_sats_mined": 65000000000,
+        "tracked_utxos": 10,
+        "rarity_counts": {
+          "common": 64999999987,
+          "uncommon": 12,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 13,
+        "total_sats_mined": 70000000000,
+        "tracked_utxos": 11,
+        "rarity_counts": {
+          "common": 69999999986,
+          "uncommon": 13,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 14,
+        "total_sats_mined": 75000000000,
+        "tracked_utxos": 12,
+        "rarity_counts": {
+          "common": 74999999985,
+          "uncommon": 14,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 15,
+        "total_sats_mined": 80000000000,
+        "tracked_utxos": 13,
+        "rarity_counts": {
+          "common": 79999999984,
+          "uncommon": 15,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 16,
+        "total_sats_mined": 85000000000,
+        "tracked_utxos": 13,
+        "rarity_counts": {
+          "common": 84999999983,
+          "uncommon": 16,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 17,
+        "total_sats_mined": 90000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 89999999982,
+          "uncommon": 17,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 18,
+        "total_sats_mined": 95000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 94999999981,
+          "uncommon": 18,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 19,
+        "total_sats_mined": 100000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 99999999980,
+          "uncommon": 19,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 20,
+        "total_sats_mined": 105000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 104999999979,
+          "uncommon": 20,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 21,
+        "total_sats_mined": 110000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 109999999978,
+          "uncommon": 21,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 22,
+        "total_sats_mined": 115000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 114999999977,
+          "uncommon": 22,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 23,
+        "total_sats_mined": 120000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 119999999976,
+          "uncommon": 23,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 24,
+        "total_sats_mined": 125000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 124999999975,
+          "uncommon": 24,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 25,
+        "total_sats_mined": 130000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 129999999974,
+          "uncommon": 25,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 26,
+        "total_sats_mined": 135000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 134999999973,
+          "uncommon": 26,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 27,
+        "total_sats_mined": 140000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 139999999972,
+          "uncommon": 27,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 28,
+        "total_sats_mined": 145000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 144999999971,
+          "uncommon": 28,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 29,
+        "total_sats_mined": 150000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 149999999970,
+          "uncommon": 29,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 30,
+        "total_sats_mined": 155000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 154999999969,
+          "uncommon": 30,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 31,
+        "total_sats_mined": 160000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 159999999968,
+          "uncommon": 31,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 32,
+        "total_sats_mined": 165000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 164999999967,
+          "uncommon": 32,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 33,
+        "total_sats_mined": 170000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 169999999966,
+          "uncommon": 33,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 34,
+        "total_sats_mined": 175000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 174999999965,
+          "uncommon": 34,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 35,
+        "total_sats_mined": 180000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 179999999964,
+          "uncommon": 35,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 36,
+        "total_sats_mined": 185000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 184999999963,
+          "uncommon": 36,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 37,
+        "total_sats_mined": 190000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 189999999962,
+          "uncommon": 37,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 38,
+        "total_sats_mined": 195000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 194999999961,
+          "uncommon": 38,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 39,
+        "total_sats_mined": 200000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 199999999960,
+          "uncommon": 39,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 40,
+        "total_sats_mined": 205000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 204999999959,
+          "uncommon": 40,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      },
+      {
+        "height": 41,
+        "total_sats_mined": 210000000000,
+        "tracked_utxos": 14,
+        "rarity_counts": {
+          "common": 209999999958,
+          "uncommon": 41,
+          "rare": 0,
+          "epic": 0,
+          "legendary": 0,
+          "mythic": 1
+        }
+      }
+    ],
+    "inscriptions": [
+      {
+        "height": 16,
+        "total_inscriptions": 1,
+        "total_brc20_inscriptions": 1,
+        "pending_commits": 0
+      },
+      {
+        "height": 18,
+        "total_inscriptions": 2,
+        "total_brc20_inscriptions": 2,
+        "pending_commits": 0
+      },
+      {
+        "height": 20,
+        "total_inscriptions": 3,
+        "total_brc20_inscriptions": 3,
+        "pending_commits": 0
+      },
+      {
+        "height": 22,
+        "total_inscriptions": 4,
+        "total_brc20_inscriptions": 4,
+        "pending_commits": 0
+      },
+      {
+        "height": 24,
+        "total_inscriptions": 5,
+        "total_brc20_inscriptions": 5,
+        "pending_commits": 0
+      },
+      {
+        "height": 26,
+        "total_inscriptions": 6,
+        "total_brc20_inscriptions": 6,
+        "pending_commits": 0
+      },
+      {
+        "height": 28,
+        "total_inscriptions": 7,
+        "total_brc20_inscriptions": 7,
+        "pending_commits": 0
+      },
+      {
+        "height": 30,
+        "total_inscriptions": 8,
+        "total_brc20_inscriptions": 8,
+        "pending_commits": 0
+      },
+      {
+        "height": 32,
+        "total_inscriptions": 9,
+        "total_brc20_inscriptions": 9,
+        "pending_commits": 0
+      },
+      {
+        "height": 34,
+        "total_inscriptions": 10,
+        "total_brc20_inscriptions": 10,
+        "pending_commits": 0
+      },
+      {
+        "height": 36,
+        "total_inscriptions": 11,
+        "total_brc20_inscriptions": 11,
+        "pending_commits": 0
+      },
+      {
+        "height": 38,
+        "total_inscriptions": 12,
+        "total_brc20_inscriptions": 12,
+        "pending_commits": 0
+      },
+      {
+        "height": 40,
+        "total_inscriptions": 13,
+        "total_brc20_inscriptions": 13,
+        "pending_commits": 0
+      }
+    ],
+    "indexer_strict": [
+      {
+        "height": 16,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 1,
+          "mint": 0,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 18,
+        "total_tokens": 1,
+        "valid_operations": 0,
+        "invalid_operations": 1,
+        "event_types": {
+          "deploy": 0,
+          "mint": 0,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 20,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 22,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 24,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 26,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 28,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 30,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 32,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 34,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 36,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 38,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 40,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 0,
+          "transfer_inscribe": 1,
+          "transfer_send": 0
+        }
+      }
+    ],
+    "indexer_lenient": [
+      {
+        "height": 16,
+        "total_tokens": 1,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 1,
+          "mint": 0,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 18,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 1,
+          "mint": 0,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 20,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 22,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 24,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 26,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 28,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 30,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 32,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 34,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 36,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 38,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 1,
+          "transfer_inscribe": 0,
+          "transfer_send": 0
+        }
+      },
+      {
+        "height": 40,
+        "total_tokens": 2,
+        "valid_operations": 1,
+        "invalid_operations": 0,
+        "event_types": {
+          "deploy": 0,
+          "mint": 0,
+          "transfer_inscribe": 1,
+          "transfer_send": 0
+        }
+      }
+    ],
+    "comparator": {
+      "total_divergences": 5,
+      "by_category": {
+        "token_existence": 1,
+        "supply_mismatch": 1,
+        "balance_mismatch": 3
+      },
+      "first_divergence_block": 41,
+      "divergences": [
+        {
+          "block": 41,
+          "category": "token_existence",
+          "detail": "Token 'ORDI'",
+          "a": "missing",
+          "b": "exists"
+        },
+        {
+          "block": 41,
+          "category": "supply_mismatch",
+          "detail": "Token 'ordi' total_minted",
+          "a": "7500",
+          "b": "2500"
+        },
+        {
+          "block": 41,
+          "category": "balance_mismatch",
+          "detail": "'ORDI' balance of bob",
+          "a": "overall=5200",
+          "b": "overall=5000"
+        },
+        {
+          "block": 41,
+          "category": "balance_mismatch",
+          "detail": "'ordi' balance of bob",
+          "a": "overall=5200",
+          "b": "overall=200"
+        },
+        {
+          "block": 41,
+          "category": "balance_mismatch",
+          "detail": "'ORDI' balance of alice",
+          "a": "overall=2300",
+          "b": "overall=0"
+        }
+      ]
+    }
+  }
+}
